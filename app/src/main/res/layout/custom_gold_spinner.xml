@@ -1,0 +1,14 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textType"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/login_btn"
+    android:drawableRight="@drawable/down_arrow"
+    android:ellipsize="marquee"
+    android:textStyle="bold"
+    android:gravity="center_vertical"
+    android:padding="@dimen/_8sdp"
+    android:paddingLeft="@dimen/_12sdp"
+    android:singleLine="true" />
+

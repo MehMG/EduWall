@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerType">
+        <item>Type of User</item>
+        <item>Student</item>
+        <item>Instructor</item>
+        <item>Private Units</item>
+        <item>Institute</item>
+    </string-array>
+
+    <string-array name="spinnerCountry">
+        <item>Country</item>
+        <item>India</item>
+        <item>Bangladesh</item>
+        <item>Pakistan</item>
+        <item>England</item>
+    </string-array>
+    <string-array name="spinnerGrade">
+        <item>Grade</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>B+</item>
+        <item>B</item>
+    </string-array>
+
+    <string-array name="spinnerMarks">
+        <item>Marks</item>
+        <item>2/5</item>
+        <item>3/5</item>
+        <item>4/10</item>
+        <item>8/10</item>
+    </string-array>
+    <string-array name="spinnerSelect">
+        <item>Select</item>
+        <item>Ins Name 1</item>
+        <item>Ins Name 2</item>
+        <item>Private Unit 1</item>
+        <item>Private Unit 2</item>
+    </string-array>
+
+    <string-array name="spinnerCourse">
+        <item>Course</item>
+        <item>MCA</item>
+        <item>BE</item>
+        <item>MBA</item>
+        <item>Bsc</item>
+    </string-array>
+
+    <string-array name="spinnerCourseYear">
+        <item>Year</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+    </string-array>
+
+    <string-array name="spinnerSubject">
+        <item>Subject</item>
+        <item>Sub1</item>
+        <item>Sub2</item>
+        <item>Sub3</item>
+        <item>Sub4</item>
+    </string-array>
+
+    <string-array name="spinnerModule">
+        <item>Module</item>
+        <item>Module1</item>
+        <item>Module2</item>
+        <item>Module3</item>
+        <item>Module4</item>
+    </string-array>
+
+    <string-array name="spinnerModuleYear">
+        <item>Semester</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="spinnerSubjectYear">
+        <item>Term</item>
+        <item>Term 1</item>
+        <item>Term 2</item>
+        <item>Term 3</item>
+    </string-array>
+    <string-array name="spinnerPostType">
+        <item>Assignment</item>
+        <item>Homework</item>
+        <item>Quiz</item>
+        <item>Project work</item>
+    </string-array>
+
+    <string-array name="spinnerPostType1">
+        <item>Post</item>
+        <item>Homework</item>
+        <item>Assignment</item>
+        <item>Test</item>
+        <item>Quiz</item>
+        <item>Project Work</item>
+        <item>Presentation</item>
+    </string-array>
+
+    <string-array name="spinnerUser">
+        <item>User1</item>
+        <item>User2</item>
+        <item>User3</item>
+        <item>User4</item>
+    </string-array>
+
+    <string-array name="spinnerInstitute">
+        <item>Institute1</item>
+        <item>Institute2</item>
+        <item>Institute3</item>
+        <item>Institute4</item>
+    </string-array>
+
+    <string-array name="spinnerPUnit">
+        <item>PUnit 1</item>
+        <item>PUnit 2</item>
+        <item>PUnit 3</item>
+        <item>PUnit 4</item>
+    </string-array>
+
+    <string-array name="spinnerInstructor">
+        <item>Instructor 1</item>
+        <item>Instructor 2</item>
+        <item>Instructor 3</item>
+        <item>Instructor 4</item>
+    </string-array>
+
+    <string-array name="strings">
+        <item>Add new Course</item>
+        <item>Add new Subject</item>
+        <item>Add new Module</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eduwall.Instructor.Activity.InsSettingsActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/lnvInsSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rlvChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryDark"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnChange"
+                            style="@style/green_dropdown"
+                            android:drawableRight="@drawable/down_arrow_white"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Change:" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnvChange1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Name"
+                                android:textColor="@color/colorPrimary" />
+
+                            <EditText
+                                android:id="@+id/edtInsName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/custom_edittext"
+                                android:hint="Name"
+                                android:inputType="text"
+                                android:padding="@dimen/_8sdp" />
+
+                            <TextView
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Email"
+                                android:textColor="@color/colorPrimary" />
+
+                            <EditText
+                                android:id="@+id/edtInsEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/custom_edittext"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/_8sdp" />
+
+                            <TextView
+                                android:id="@+id/txtInsQual"
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Qualification"
+                                android:textColor="@color/colorPrimary" />
+
+                            <EditText
+                                android:id="@+id/edtInsQual"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/custom_edittext"
+                                android:hint="Qualification"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/_8sdp" />
+
+                            <TextView
+                                android:id="@+id/txtInsSpecial"
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Specialization"
+                                android:textColor="@color/colorPrimary" />
+
+                            <EditText
+                                android:id="@+id/edtInsSpecial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/custom_edittext"
+                                android:hint="Specialization"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/_8sdp" />
+
+
+                            <TextView
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Password"
+                                android:textColor="@color/colorPrimary" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/custom_edittext"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtInsPassword"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:hint="Password"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_8sdp" />
+
+                                <LinearLayout
+                                    android:id="@+id/lnvInsEye"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_10sdp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/icon_eye" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Phone Number"
+                                android:textColor="@color/colorPrimary" />
+
+                            <EditText
+                                android:id="@+id/edtInsPhoneNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/custom_edittext"
+                                android:hint="Phone Number"
+                                android:inputType="number"
+                                android:maxLength="13"
+                                android:padding="@dimen/_8sdp" />
+
+                            <TextView
+                                style="@style/Text_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:text="Country"
+                                android:textColor="@color/colorPrimary" />
+
+                            <Spinner
+                                android:id="@+id/spinnerInsCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@null"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnvChange2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/radial_gray_light"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/txtDelete1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Delete Course"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtDelete2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Delete Institute or Private Unit"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtHelp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Help"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtFaq"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_8sdp"
+                                android:text="FAQ"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtAppInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_8sdp"
+                                android:text="App Info"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtSuspend"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:background="@color/white"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Suspend Student"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlvNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnNotification"
+                            style="@style/green_dropdown"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Notification" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlvDeleteAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnClose"
+                            style="@style/green_dropdown"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Delete Account" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

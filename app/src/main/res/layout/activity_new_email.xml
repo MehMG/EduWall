@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eduwall.Student.Activity.NewEmailActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/Text_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Receiver:"
+                    android:textColor="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/spinnerUserType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@null"></Spinner>
+
+                <Spinner
+                    android:id="@+id/spinnerSelectUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@null"></Spinner>
+
+                <TextView
+                    style="@style/Text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="To:"
+                    android:textColor="@color/black" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    style="@style/Text_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Email Title"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edtEmailTitle"
+                    style="@style/edtstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:inputType="text"
+                    android:padding="@dimen/_8sdp" />
+
+                <TextView
+                    style="@style/Text_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Description"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edtEmailDescription"
+                    style="@style/edtstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:focusable="true"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:overScrollMode="always"
+                    android:padding="@dimen/_8sdp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical" />
+
+
+                <TextView
+                    style="@style/Text_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Attachments"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerAttachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/lnvAddMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAddMedia"
+            style="@style/Text_medium"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:text="+ Add Media" />
+
+        <LinearLayout
+            android:id="@+id/lnvAddMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtPhoto"
+                style="@style/Text_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:drawableLeft="@drawable/icon_photo"
+                android:drawablePadding="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Photo" />
+
+            <TextView
+                android:id="@+id/txtAudio"
+                style="@style/Text_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:drawableLeft="@drawable/icon_audio"
+                android:drawablePadding="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Audio" />
+
+            <TextView
+                android:id="@+id/txtVideo"
+                style="@style/Text_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:drawableLeft="@drawable/icon_video"
+                android:drawablePadding="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Video" />
+
+            <TextView
+                android:id="@+id/txtDocument"
+                style="@style/Text_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:drawableLeft="@drawable/icon_document"
+                android:drawablePadding="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Document" />
+
+            <TextView
+                android:id="@+id/txtVoiceNote"
+                style="@style/Text_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_microphone"
+                android:drawablePadding="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Voice note" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.Activity.SettingsActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/lnvSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rlvChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryDark"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnChange"
+                            style="@style/green_dropdown"
+                            android:drawableRight="@drawable/down_arrow_white"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Change:" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnvChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/Text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:text="Name"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/edtChangeName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:background="@drawable/custom_edittext"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:padding="@dimen/_8sdp" />
+
+                        <TextView
+                            style="@style/Text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:text="Email"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/edtChangeEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:background="@drawable/custom_edittext"
+                            android:enabled="false"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="40"
+                            android:padding="@dimen/_8sdp" />
+
+                        <TextView
+                            style="@style/Text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:text="Password"
+                            android:textColor="@color/colorPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:background="@drawable/custom_edittext"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edtChangePassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:hint="Password"
+                                android:inputType="text"
+                                android:maxLength="12"
+                                android:padding="@dimen/_8sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/lnvEye"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_10sdp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_eye" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/Text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:text="Phone Number"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/edtChangePhoneNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:background="@drawable/custom_edittext"
+                            android:hint="Phone Number"
+                            android:inputType="number"
+                            android:maxLength="13"
+                            android:padding="@dimen/_8sdp" />
+
+                        <TextView
+                            style="@style/Text_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:text="Country"
+                            android:textColor="@color/colorPrimary" />
+
+                        <Spinner
+                            android:id="@+id/spinnerChangeCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@null"></Spinner>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlvManage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnManage"
+                            style="@style/green_dropdown"
+                            android:drawableRight="@drawable/down_arrow_white"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Manage Institute and Course Modules:" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnvManage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/radial_gray_light"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtLeave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:background="@color/white"
+                            android:padding="@dimen/_8sdp"
+                            android:text="Leave Institute or Class"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtDelete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:background="@color/white"
+                            android:padding="@dimen/_8sdp"
+                            android:text="Delete Institute or Course Module"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtMarkComplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:background="@color/white"
+                            android:padding="@dimen/_8sdp"
+                            android:text="Mark Institute or Course Module as Complete"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlvNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnNotification"
+                            style="@style/green_dropdown"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Notification" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlvClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnClose"
+                            style="@style/green_dropdown"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Close Account" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

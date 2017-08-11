@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "702871410196",
+    "firebase_url": "https://eduwall-2de77.firebaseio.com",
+    "project_id": "eduwall-2de77",
+    "storage_bucket": "eduwall-2de77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702871410196:android:981a065db4c8c38e",
+        "android_client_info": {
+          "package_name": "com.eduwall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702871410196-g2dgdn2pu11lt4k4cm9b8inlcc4j69rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXBFBFEGKHLPM36FQ6BM6YzXLcFS_SSFg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eduwall">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Authentication.Activity.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Session.Activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Student.Activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.NewEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.InstituteInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.MyInstituteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.InboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.ShowAllPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.NewJoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.CommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.AnswerCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.TaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Activity.PostQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsAddCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsAddStudentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsAllCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsStudTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsSubmissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsAddPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsAssignGradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsStudentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instructor.Activity.InsAssignmentTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivateUnit.Activity.PUHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivateUnit.Activity.FeesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivateUnit.Activity.PUPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivateUnit.Activity.PUStudentsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Instructor.Activity.InsSelectClassActivity" />
+
+        <service android:name=".Session.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Session.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Instructor.Activity.InsAddNewCourseActivity" />
+        <activity android:name=".Student.Activity.FAQActivity" />
+        <activity android:name=".Student.Activity.HelpActivity" />
+        <activity android:name=".Student.Activity.LeaveActivity" />
+        <activity android:name=".Student.Activity.MarkCompleteActivity" />
+        <activity android:name=".Instructor.Activity.InsAppInfoActivity" />
+        <activity android:name=".Instructor.Activity.InsDeleteActivity" />
+        <activity android:name=".PrivateUnit.Activity.SuspendActivity" />
+        <activity
+            android:name=".Session.Activity.BoxActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".Student.Activity.ViewMessageActivity" />
+        <activity android:name=".PrivateUnit.Activity.PURequestActivity" />
+        <activity android:name=".Student.Activity.HomeworkActivity" />
+        <activity android:name=".Student.Activity.AssignmentActivity" />
+        <activity android:name=".Student.Activity.TestActivity" />
+        <activity android:name=".Student.Activity.StartTestActivity" />
+        <activity android:name=".Student.Activity.QuizActivity" />
+        <activity android:name=".Student.Activity.ProjectWorkActivity" />
+        <activity android:name=".Student.Activity.StartQuizActivity"></activity>
+    </application>
+
+</manifest>

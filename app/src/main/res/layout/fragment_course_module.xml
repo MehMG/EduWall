@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/lnvCourseModules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/Text_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinnerCourseCourse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@null"></Spinner>
+
+            <TextView
+                android:id="@+id/txtCourseSubject"
+                style="@style/Text_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinnerCourseSubject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@null"></Spinner>
+
+            <TextView
+                android:id="@+id/txtCourseModule"
+                style="@style/Text_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Module"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinnerCourseModule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@null"></Spinner>
+
+            <Button
+                android:id="@+id/btnSelectCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/login_btn"
+                android:text="Select Course"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

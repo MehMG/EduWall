@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp">
+
+        <RadioGroup
+            android:id="@+id/rgNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/rbSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_12sdp"
+                android:background="@drawable/custom_edittext"
+                android:layoutDirection="rtl"
+                android:gravity="left|center_vertical"
+                android:text="Tone"
+                />
+
+
+            <RadioButton
+                android:id="@+id/rbVibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_12sdp"
+                android:background="@drawable/custom_edittext"
+                android:layoutDirection="rtl"
+                android:text="Vibrate"
+                android:gravity="left|center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/rbSoundVibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_12sdp"
+                android:background="@drawable/custom_edittext"
+                android:layoutDirection="rtl"
+                android:text="Popup"
+                android:gravity="left|center_vertical"/>
+
+
+            <RadioButton
+                android:layout_gravity="center_vertical"
+                android:id="@+id/rbMute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_edittext"
+                android:layoutDirection="rtl"
+                android:padding="@dimen/_12sdp"
+                android:text="Light"
+                android:gravity="left|center_vertical"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

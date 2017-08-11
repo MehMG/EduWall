@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bpWhite"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivRBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/icon_back" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivlogo"
+        style="@style/ivlogo"
+        android:layout_above="@+id/cardViewRegister"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/logo" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/register_bg"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lnvRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="REGISTER"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/login_underline" />
+
+
+                <EditText
+                    android:id="@+id/edtRUsername"
+                    style="@style/edtstyle"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/icon_username"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:padding="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/edtREmail"
+                    style="@style/edtstyle"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:padding="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/edtRPassword"
+                    style="@style/edtstyle"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/icon_password"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:padding="@dimen/_8sdp" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="center_vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8sp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/bpLight_gray"></LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edtRIndexNo"
+                    style="@style/edtstyle"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/icon_indexnumber"
+                    android:hint="Index No"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8sp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/bpLight_gray"></LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRRegister"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/register_btn"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bpWhite" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
